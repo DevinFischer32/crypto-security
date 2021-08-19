@@ -1,0 +1,82 @@
+a => y  oppisite -1
+b => z  oppisite +1
+c => w  oppisite -1
+d => x  oppisite +1
+e => u  oppisite -1
+f => v  oppisite +1
+g => s  oppisite -1
+h => t  oppisite +1
+i => q  oppisite -1
+j => r  oppisite +1
+k => o  oppisite -1
+l => p  oppisite +1
+m => n  oppisite
+
+Q pkfu wjalhksjylta!
+
+
+Code for cipher
+
+
+messageToCipher('Ilovecryptographs')
+function messageToCipher(s){
+  let cipheredMsg = []  
+  let arr = s.toLowerCase().split('')
+  for(let i=0;i<arr.length;i++){
+    if(arr[i] === 'a'){
+      cipheredMsg.push('y')
+    }else if(arr[i] === 'b'){
+      cipheredMsg.push('z')
+    }else if(arr[i] === 'c'){
+      cipheredMsg.push('w')
+    }else if(arr[i] === 'd'){
+      cipheredMsg.push('x')
+    }else if(arr[i] === 'e'){
+      cipheredMsg.push('u')
+    }else if(arr[i] === 'f'){
+      cipheredMsg.push('v')
+    }else if(arr[i] === 'g'){
+      cipheredMsg.push('s')
+    }else if(arr[i] === 'h'){
+      cipheredMsg.push('t')
+    }else if(arr[i] === 'i'){
+      cipheredMsg.push('q')
+    }else if(arr[i] === 'j'){
+      cipheredMsg.push('r')
+    }else if(arr[i] === 'k'){
+      cipheredMsg.push('o')
+    }else if(arr[i] === 'l'){
+      cipheredMsg.push('p')
+    }else if(arr[i] === 'm'){
+      cipheredMsg.push('n')
+    }else if(arr[i] === 'n'){
+      cipheredMsg.push('m')
+    } if(arr[i] === 'y'){
+      cipheredMsg.push('a')
+    }else if(arr[i] === 'z'){
+      cipheredMsg.push('b')
+    }else if(arr[i] === 'w'){
+      cipheredMsg.push('c')
+    }else if(arr[i] === 'x'){
+      cipheredMsg.push('d')
+    }else if(arr[i] === 'u'){
+      cipheredMsg.push('e')
+    }else if(arr[i] === 'v'){
+      cipheredMsg.push('f')
+    }else if(arr[i] === 's'){
+      cipheredMsg.push('g')
+    }else if(arr[i] === 't'){
+      cipheredMsg.push('h')
+    }else if(arr[i] === 'q'){
+      cipheredMsg.push('i')
+    }else if(arr[i] === 'r'){
+      cipheredMsg.push('j')
+    }else if(arr[i] === 'o'){
+      cipheredMsg.push('k')
+    }else if(arr[i] === 'p'){
+      cipheredMsg.push('l')
+    }
+  }
+
+return cipheredMsg.toString().replace(/,/g,"")
+}
